@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="LIBGDX Android">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/libs/gdx-backend-android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/libs/gdx-backend-android-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
