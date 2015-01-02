@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="dexedLibs">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-ca18deb766624cc48710e2b16c586a71.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-sources-8ef736fa82e9d96bde5afd67e322ee24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-eef3c862a39363f30ef285dfb86cc3a1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-a9f19854ca9f63c861b0305313b85d94.jar!/" />
       <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-e059c1d9e529394ca2e18157ff8c2aa6.jar!/" />
       <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-sources-7218d2d430a99df16f93e8e657ce88cb.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-sources-8ef736fa82e9d96bde5afd67e322ee24.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-a9f19854ca9f63c861b0305313b85d94.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-eef3c862a39363f30ef285dfb86cc3a1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Shesh_Yash-android/bin/dexedLibs/gdx-backend-android-ca18deb766624cc48710e2b16c586a71.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
