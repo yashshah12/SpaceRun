@@ -183,4 +183,6 @@ public class GameScreen implements Screen {
 	public Level getLevel() {
 		return level;
 	}
+
+    public StatusBar getStatusBar() { return statusBar; }
 }

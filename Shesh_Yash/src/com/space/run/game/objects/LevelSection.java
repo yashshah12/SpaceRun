@@ -60,8 +60,8 @@ public class LevelSection extends GameObject {
 		placeCoins(MathUtils.random(5, 10), false);
 		placeCoins(0, true);
 
-		generateObjects("Enemy", MathUtils.random(0, 2), alEnemies, false);
-		generateObjects("Enemy", MathUtils.random(0, 2), alEnemies, true);
+		generateObjects("Enemy", MathUtils.random(0, 3), alEnemies, false);
+		generateObjects("Enemy", MathUtils.random(0, 3), alEnemies, true);
 
 		/*
 		 * Only generate a heart if the player has 5 or less lives. If the

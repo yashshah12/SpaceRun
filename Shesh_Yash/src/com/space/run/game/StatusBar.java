@@ -59,12 +59,8 @@ public class StatusBar {
         btnMute = new TextButton("Mute",Assets.skinUI);
         btnMute.setName("Mute");
         btnMute.setSize(90, 30);
-        btnMute.setPosition(SideScroller.WIDTH / 2 - btnMute.getWidth() / 2 - 100, (SideScroller.HEIGHT - 40));
-        btnPause.addListener(new ButtonListener(game));
+        btnMute.setPosition(SideScroller.WIDTH / 2 - btnMute.getWidth() / 2 - 130, (SideScroller.HEIGHT - 40));
         btnMute.addListener(new ButtonListener(game));
-
-
-
 
 		stage.addActor(btnPause);
         stage.addActor(btnMute);
@@ -130,4 +126,6 @@ public class StatusBar {
 	public Stage getStage() {
 		return stage;
 	}
+
+    public TextButton getBtnMute() { return btnMute; }
 }

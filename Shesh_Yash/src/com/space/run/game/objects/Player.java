@@ -57,7 +57,7 @@ public class Player extends GameObject {
 	/**
 	 * The maximum speed that the player can jump.
 	 */
-	private static final float MAX_JUMP_SPEED = 700f;
+	private static final float MAX_JUMP_SPEED = 650f;
 
 	/**
 	 * The maximum time the player can jump, for one jump.
@@ -661,6 +661,7 @@ public class Player extends GameObject {
 						}
 
 						object.flagForRemoval();
+                        level.addExplosion(new Explosion(object.getPosition().cpy()));
 
 						lScore += ((Enemy) object).getPoints();
 					}

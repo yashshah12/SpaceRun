@@ -141,10 +141,13 @@ public class MainMenuScreen implements Screen {
                 if(isMute==false){
                     Assets.musicGameLoop.setVolume(0f);
                     isMute=true;
-
+                    game.getGameScreen().getStatusBar().getBtnMute().setText("UnMute");
+                    game.getGameScreen().getStatusBar().getBtnMute().setSize(130, 30);
                 }else{
                     Assets.musicGameLoop.setVolume(0.2f);
                     isMute =false;
+                    game.getGameScreen().getStatusBar().getBtnMute().setText("Mute");
+                    game.getGameScreen().getStatusBar().getBtnMute().setSize(90, 30);
                 }
             }else{
 				game.setScreen(game.getMainMenuScreen());

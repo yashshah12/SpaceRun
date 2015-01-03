@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+import com.space.run.game.objects.Explosion;
 import com.space.run.game.objects.Ground;
 import com.space.run.game.objects.LevelSection;
 import com.space.run.game.objects.Player;
@@ -48,6 +49,8 @@ public class Level {
 	 */
 	private boolean shouldShake = false;
 
+    private ArrayList<Explosion> explosions;
+
 	public Level() {
 		player = new Player(new Vector2(100, 60), this);
 
@@ -55,6 +58,8 @@ public class Level {
 
 		alLevelSections = new ArrayList<LevelSection>();
 		alLevelSections.add(new LevelSection(this));
+
+        explosions = new ArrayList<Explosion>();
 
 		background = new ParallaxBackground(new ParallaxLayer(Assets.texRegBackground2, new Vector2(0, 0), 0.125f, 0), new ParallaxLayer(Assets.texRegBackground1, new Vector2(0, -171), 0.25f, 0));
 	}
@@ -87,6 +92,17 @@ public class Level {
 				i--;
 			}
 		}
+
+        for (int i = 0; i < explosions.size(); i++) {
+            Explosion e = explosions.get(i);
+
+            e.update(delta);
+
+            if (e.needsRemoval()) {
+                explosions.remove(i);
+                i--;
+            }
+        }
 	}
 
 	/**
@@ -104,7 +120,16 @@ public class Level {
 
 		ground.render(batch);
 		player.render(batch);
+
+        for(Explosion e : explosions)
+        {
+            e.render(batch);
+        }
 	}
+
+    public void addExplosion(Explosion e) {
+        explosions.add(e);
+    }
 
 	/**
 	 * Gets the level's player.
