@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/Shesh_Yash/Shesh_Yash.iml" filepath="$PROJECT_DIR$/Shesh_Yash/Shesh_Yash.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Shesh_Yash-android/Shesh_Yash-android.iml" filepath="$PROJECT_DIR$/Shesh_Yash-android/Shesh_Yash-android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Shesh_Yash-desktop/Shesh_Yash-desktop.iml" filepath="$PROJECT_DIR$/Shesh_Yash-desktop/Shesh_Yash-desktop.iml" />
-    </modules>
+    <modules />
   </component>
 </project>
 
