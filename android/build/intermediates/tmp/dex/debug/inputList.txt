@@ -1,0 +1,5 @@
+/Users/yashshah/Desktop/SpaceRun/android/build/intermediates/classes/debug
+/Users/yashshah/Desktop/SpaceRun/android/build/intermediates/pre-dexed/debug/core-1.0-17d3d340ca66d0c61a741f5b329f8d1a8f172ed8.jar
+/Users/yashshah/Desktop/SpaceRun/android/build/intermediates/pre-dexed/debug/gdx-box2d-1.5.2-dccc0499877e9612d48a915a2edc530582328d14.jar
+/Users/yashshah/Desktop/SpaceRun/android/build/intermediates/pre-dexed/debug/gdx-backend-android-1.5.2-cd031bfb1ac98409aa3c1d4bb17de57cfc70022d.jar
+/Users/yashshah/Desktop/SpaceRun/android/build/intermediates/pre-dexed/debug/gdx-1.5.2-65752e9adf637686f8cad7978e7c8e216e9857d3.jar

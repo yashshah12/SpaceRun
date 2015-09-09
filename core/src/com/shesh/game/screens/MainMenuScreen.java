@@ -115,73 +115,33 @@ public class MainMenuScreen implements Screen {
 		public void clicked(InputEvent event, float x, float y) {
 			String sBtnName = event.getListenerActor().getName();
 
-			if (sBtnName == "Restart") {
+			if (sBtnName.equals("Restart")) {
 				game.getScreen().hide();
 				game.setGameScreen(new GameScreen(game));
 				game.setScreen(game.getGameScreen());
-			} else if (sBtnName == "Help") {
+			} else if (sBtnName.equals("Help")) {
 				game.setScreen(game.getHelpScreen());
-			} else if (sBtnName == "Resume") {
+			} else if (sBtnName.equals("Resume")) {
 				game.setScreen(game.getGameScreen());
-			} else if (sBtnName == "Scores") {
+			} else if (sBtnName.equals("Scores")) {
 				game.setScreen(game.getHighScoresScreen());
-			} else if (sBtnName == "Pause") {
+			} else if (sBtnName.equals("Pause")) {
 				game.setScreen(game.getPauseScreen());
-			}else if (sBtnName=="Mute") {
-				if(isMute==false){
+			} else if (sBtnName.equals("Mute")) {
+				if(!isMute){
 					Assets.musicGameLoop.setVolume(0f);
-					isMute=true;
+					isMute = true;
 					game.getGameScreen().getStatusBar().getBtnMute().setText("UnMute");
 					game.getGameScreen().getStatusBar().getBtnMute().setSize(130, 30);
-				}else{
+				} else {
 					Assets.musicGameLoop.setVolume(0.2f);
-					isMute =false;
+					isMute = false;
 					game.getGameScreen().getStatusBar().getBtnMute().setText("Mute");
 					game.getGameScreen().getStatusBar().getBtnMute().setSize(90, 30);
 				}
-			}else{
+			} else {
 				game.setScreen(game.getMainMenuScreen());
 			}
-
-//            switch (sBtnName)
-//            {
-//                case "Restart":
-//                    game.setGameScreen(new GameScreen(game));
-//                    game.setScreen(game.getGameScreen());
-//                    break;
-//                case "Help":
-//                    game.setScreen(game.getHelpScreen());
-//                    break;
-//                case "Resume":
-//                    game.setScreen(game.getGameScreen());
-//                    break;
-//                case "Scores":
-//                    game.setScreen(game.getHighScoresScreen());
-//                    break;
-//                case "Pause":
-//                    game.setScreen(game.getPauseScreen());
-//                    break;
-//                case "Mute":
-//                    TextButton btnMute = game.getGameScreen().getStatusBar().getBtnMute();
-//
-//                    if(isMute==false){
-//                        Assets.musicGameLoop.setVolume(0f);
-//                        isMute=true;
-//                        btnMute.setText("UnMute");
-//                        btnMute.setSize(130, 30);
-//                        btnMute.setPosition(SpaceRun.WIDTH / 2 - btnMute.getWidth() / 2 - 130, (SpaceRun.HEIGHT - 35));
-//                    }else{
-//                        Assets.musicGameLoop.setVolume(0.2f);
-//                        isMute =false;
-//                        btnMute.setText("Mute");
-//                        btnMute.setSize(90, 30);
-//                        btnMute.setPosition(SpaceRun.WIDTH / 2 - btnMute.getWidth() / 2 - 130, (SpaceRun.HEIGHT - 35));
-//                    }
-//                    break;
-//                default:
-//                    game.setScreen(game.getMainMenuScreen());
-//                    break;
-//            }
 		}
 	}
 }
